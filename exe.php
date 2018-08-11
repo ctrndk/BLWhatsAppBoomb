@@ -80,3 +80,5 @@ Cookie: identity=".$rand1."; browser_id=".$rand2."; _ga=GA1.2.1024758930.1531960
 	print ". ".$nomer;
 	print $G." [Sending]\n".$X;
 }
+
+echo $R."             +======================================+".$X."\n\n";
