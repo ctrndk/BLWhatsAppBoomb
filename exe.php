@@ -23,19 +23,19 @@ if(strtolower(substr(PHP_OS, 0, 3)) == 'win') {
     $ua = 'Mozilla/5.0 (Linux; Android 5.1.1; Andromax A16C3H Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36';
     system('clear');
 }
-echo $R."\n+++++++++++++++++++++++++++++++++++++++";
-echo $B."\n+   Author  : ctrndk                  ".$R.'+';
-echo $B."\n+   Github  : @ctrndk                 ".$R.'+';
-echo $B."\n+   Team    : SGB Team                ".$R.'+';
-echo $R."\n++++++++++++++++++++++++++++++++++++++".$R.'+';
-echo $B."\n+  Pakai Kode 62... untuk BOM SMS     ".$R.'+';
-echo $B."\n+  Pakai Kode 08... untuk BOM WA      ".$R.'+';
-echo $Y."\n>================[ ctrndk ]=========(@)>".$X."\n";
-echo $B."Nomor Target : ".$X;
+echo $R."\n   +++++++++++++++++++++++++++++++++++++++";
+echo "\n   +   ".$B."Author  : ctrndk                  ".$R.'+';
+echo "\n   +   ".$B."Github  : @ctrndk                 ".$R.'+';
+echo "\n   +   ".$B."Team    : SGB Team                ".$R.'+';
+echo "\n   ++++++++++++++++++++++++++++++++++++++".$R.'+';
+echo "\n   +  ".$B."Pakai Kode 62... untuk BOM SMS     ".$R.'+';
+echo "\n   +  ".$B."Pakai Kode 08... untuk BOM WA      ".$R.'+';
+echo $R."\n   >================[ ctrndk ]=========(@)>".$X."\n";
+echo $G."Nomor Target : ".$X;
 $nomer = trim(fgets(STDIN));
-echo $B."Jumlah : ".$X;
+echo $G."Jumlah : ".$X;
 $jumlah = trim(fgets(STDIN));
-echo $Y."+======================================+".$X."\n\n";
+echo $R."   +======================================+".$X."\n\n";
 for($a=0;$a<=$jumlah-1;$a++) {
 	$rand1 = md5(rand(12345678,98765432));
 	$rand2 = md5(rand(12345678,98765432));
