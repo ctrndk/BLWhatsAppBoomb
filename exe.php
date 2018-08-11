@@ -27,7 +27,7 @@ echo $R."\n+++++++++++++++++++++++++++++++++++++++";
 echo $B."\n+   Author  : ctrndk                  ".$R.'+';
 echo $B."\n+   Github  : @ctrndk                 ".$R.'+';
 echo $B."\n+   Team    : SGB Team                ".$R.'+';
-echo $R."\n+++++++++++++++++++++++++++++++++++++++".$G.$X."\n";
+echo $R."\n+++++++++++++++++++++++++++++++++++++++".$G.$X;
 echo $Y."\n>==================== ctrndk ))=====(@)>".$X."\n\n";
 echo "Nomor Target : \nInput : ";
 $nomer = trim(fgets(STDIN));
