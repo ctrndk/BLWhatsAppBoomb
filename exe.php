@@ -34,7 +34,7 @@ $nomer = trim(fgets(STDIN));
 echo "Jumlah : \nInput : ";
 $jumlah = trim(fgets(STDIN));
 echo $Y."\n>==================== ctrndk ))=====(@)>".$X."\n\n";
-for($a=0;$a<$jumlah-1;$a++) {
+for($a=0;$a<=$jumlah-1;$a++) {
 	$rand1 = md5(rand(12345678,98765432));
 	$rand2 = md5(rand(12345678,98765432));
 	$rand = array($rand1,$rand2);
