@@ -82,5 +82,5 @@ Cookie: identity=".$rand1."; browser_id=".$rand2."; _ga=GA1.2.1024758930.1531960
 }
 
 echo $R."             +======================================+\n";
-echo $G."             Target : ".$nomer." Jumlah : ".$jumlah." \n";
+echo $G."                 Target : ".$nomer." | Jumlah : ".$jumlah." \n";
 echo $R."             +======================================+".$X."\n\n";
