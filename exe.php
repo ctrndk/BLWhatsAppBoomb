@@ -29,9 +29,9 @@ echo $B."\n+   Github  : @ctrndk                 ".$R.'+';
 echo $B."\n+   Team    : SGB Team                ".$R.'+';
 echo $R."\n+++++++++++++++++++++++++++++++++++++++".$G.$X;
 echo $Y."\n>==================== ctrndk ))=====(@)>".$X."\n\n";
-echo "Nomor Target : \nInput : ";
+echo "Nomor Target : ";
 $nomer = trim(fgets(STDIN));
-echo "Jumlah : \nInput : ";
+echo "Jumlah : ";
 $jumlah = trim(fgets(STDIN));
 echo $Y."\n>==================== ctrndk ))=====(@)>".$X."\n\n";
 for($a=0;$a<=$jumlah-1;$a++) {
