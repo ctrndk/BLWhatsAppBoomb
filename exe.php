@@ -23,11 +23,11 @@ if(strtolower(substr(PHP_OS, 0, 3)) == 'win') {
     $ua = 'Mozilla/5.0 (Linux; Android 5.1.1; Andromax A16C3H Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36';
     system('clear');
 }
-echo $R."\n++++++++++++++++++++++++++++++++++++++";
-echo $B."\nAuthor  : ctrndk                     ".$R.'+';
-echo $B."\nGithub  : https://github.com/ctrndk  ".$R.'+';
-echo $B."\nTeam    : SGB Team                   ".$R.'+';
-echo $R."\n++++++++++++++++++++++++++++++++++++++".$G.$X."\n\n";
+echo $R."\n+++++++++++++++++++++++++++++++++++++++";
+echo $B."\n+   Author  : ctrndk                  ".$R.'+';
+echo $B."\n+   Github  : @ctrndk                 ".$R.'+';
+echo $B."\n+   Team    : SGB Team                ".$R.'+';
+echo $R."\n+++++++++++++++++++++++++++++++++++++++".$G.$X."\n\n";
 echo "Nomor Target?\nInput : ";
 $nomer = trim(fgets(STDIN));
 echo "Jumlah?\nInput : ";
@@ -71,5 +71,5 @@ Cookie: identity=".$rand1."; browser_id=".$rand2."; _ga=GA1.2.1024758930.1531960
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $ar);
 	$asw = curl_exec($ch);
 	curl_close($ch);
-	print $a.$nomer." [Sending]\n";
+	print $a+1.$nomer."".$G." [Sending]\n";
 }
