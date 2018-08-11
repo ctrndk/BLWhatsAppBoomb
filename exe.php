@@ -28,12 +28,12 @@ echo $B."\n+   Author  : ctrndk                  ".$R.'+';
 echo $B."\n+   Github  : @ctrndk                 ".$R.'+';
 echo $B."\n+   Team    : SGB Team                ".$R.'+';
 echo $R."\n+++++++++++++++++++++++++++++++++++++++".$G.$X;
-echo $Y."\n>================[ ctrndk ]=========(@)>".$X."\n\n";
+echo $Y."\n>================[ ctrndk ]=========(@)>".$X."\n";
 echo $B."Nomor Target : ".$X;
 $nomer = trim(fgets(STDIN));
 echo $B."Jumlah : ".$X;
 $jumlah = trim(fgets(STDIN));
-echo $Y."\n+======================================+".$X."\n\n";
+echo $Y."+======================================+".$X."\n\n";
 for($a=0;$a<=$jumlah-1;$a++) {
 	$rand1 = md5(rand(12345678,98765432));
 	$rand2 = md5(rand(12345678,98765432));
